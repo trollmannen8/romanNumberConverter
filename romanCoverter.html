@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h1>Roman Numeral Converter</h1>
+    <p>Converts numbers to Roman numerals</p>
+
+    <label for="arabic">Arabic number:</label>
+    <input type="number" name="arabic" id="arabic" min="1" max="3999">
+    <button onclick="calculate()">Calculate</button>
+    <p>Roman number: </p>
+    <p id="result"></p>
     
     <script>
 
@@ -67,7 +76,12 @@
             return result;
         }
 
-        console.log(convertToRoman(248));
+        function calculate(){
+        var arabicNumber = document.getElementById("arabic").value;
+        var romanNumber = convertToRoman(arabicNumber);
+        document.getElementById("result").innerHTML = romanNumber;
+        }
+
     </script>
 
 </body>
