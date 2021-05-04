@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Roman Numeral Converter</title>
 </head>
 <body>
 
     <h1>Roman Numeral Converter</h1>
-    <p>Converts numbers to Roman numerals</p>
+    <p id="description">Converts Arabic numbers to Roman numerals</p>
 
-    <label for="arabic">Arabic number:</label>
-    <input type="number" name="arabic" id="arabic" min="1" max="3999">
-    <button onclick="calculate()">Calculate</button>
-    <p>Roman number: </p>
-    <p id="result"></p>
+    <div id="content">
+        <label for="arabic">Arabic number:</label>
+        <input type="number" name="arabic" id="arabic" min="1" max="3999">
+        <button onclick="calculate()">Calculate</button>
+        <p>Roman number: </p>
+        <p id="result"></p>
+    </div>
     
     <script>
 
